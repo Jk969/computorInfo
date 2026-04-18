@@ -2,6 +2,7 @@
 
 由于在 Windows 环境下无法直接编译 macOS 应用程序，本工程引入了 **GitHub Actions** 来实现在云端（免费）自动编译 Mac 客户端的功能。编译出的程序将使用 `universal2` 架构，**完美兼容 Intel 处理器的旧款 Mac 以及 M1/M2/M3 (Apple Silicon) 的新款 Mac**。
 
+
 ## 目录结构说明
 - `client_mac/`: 存放专门针对 macOS 编写的采集代码。避免与 Windows 代码混用引发报错。
 - `.github/workflows/build_mac.yml`: 控制 GitHub 服务器自动帮您打包的配置文件。
